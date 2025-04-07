@@ -1,17 +1,25 @@
-function Card(props) {
-    function cardRank(){
-        const rank = props.rank;
+import placeholder from './assets/placeholder.png'
+import placeholderSound from './assets/sound/placeholder.mp3'
 
-        if(rank === "legendary"){
+function Card({ profile = placeholder, name = "Agent",
+    description = "Wlang Title", ranks = "", 
+    sounds = placeholderSound}) {
+    function cardRank() {
+        const rank = ranks;
+
+        if (rank === "legendary") {
             return "hsl(51, 83%, 65%)"
         }
-        else if(rank === "rare"){
+        else if (rank === "epic") {
+            return "hsl(276, 63.30%, 71.20%)"
+        }
+        else if (rank === "rare") {
             return "hsl(204, 78%, 78%)"
         }
-        else if(rank === "common"){
+        else if (rank === "common") {
             return "hsla(41, 86%, 25%, 0.411)"
         }
-        else{
+        else {
             return "white"
         }
     }
@@ -28,13 +36,18 @@ function Card(props) {
         backgroundColor: cardRank()
     };
 
+    function cardSound() {
+        const sound = new Audio(sounds);
+        sound.play();
+    }
+
     return (<>
-        <div className="card" style={styles}>
-            <img className="cardImage" src={props.profile} alt="Profile Picture" />
-            <h2 className="card-title">{props.name}</h2>
-            <p className="card-text">{props.description}</p>
+        <div className="card" style={styles} onClick={cardSound}>
+            <img className="cardImage" src={profile} alt="Profile Picture" />
+            <h2 className="card-title">{name}</h2>
+            <p className="card-text">{description}</p>
         </div>
-        </>
+    </>
     );
 }
 
