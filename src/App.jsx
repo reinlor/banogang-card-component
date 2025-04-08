@@ -31,41 +31,43 @@ function App() {
     <>
       <h1 className='web-title'>Banogang Members</h1>
 
-      <Card name="Eneil" description="Server Creator"
-        profile={eneilProfile} ranks="legendary" sounds={eneilSound}/>
+      <div className='CardContainer'>
+        <Card name="Eneil" description="Server Creator"
+          profile={eneilProfile} ranks="legendary" sounds={eneilSound} />
 
-      <Card name="Jord" description='Mascot'
-         profile={jordProfile} ranks="epic" />
+        <Card name="Jord" description='Mascot'
+          profile={jordProfile} ranks="epic" />
 
-      <Card name="Seany" description='Admin'
-         profile={seanProfile} ranks="rare" />
+        <Card name="Seany" description='Admin'
+          profile={seanProfile} ranks="rare" />
 
-      <Card name="Mike" description='Admin'
-         ranks="rare" sounds={mikeSound}/>
+        <Card name="Mike" description='Admin'
+          ranks="rare" sounds={mikeSound} />
 
-      <Card name="Yoh" description='Admin'
-        profile={yohProfile} ranks="rare" sounds={yohSound}/>
+        <Card name="Yoh" description='Admin'
+          profile={yohProfile} ranks="rare" sounds={yohSound} />
 
-      <Card name="Paul" description='Pokemon Trainer'
-        profile={paulProfile} ranks="common" sounds={paulSound}/>
+        <Card name="Paul" description='Pokemon Trainer'
+          profile={paulProfile} ranks="common" sounds={paulSound} />
 
-      <Card name="Xyd"
-        profile={xydProfile} ranks="common" />
+        <Card name="Xyd"
+          profile={xydProfile} ranks="common" />
 
-      <Card name="Daniel Padilla"
-         profile={danielProfile} ranks="common" />
+        <Card name="Daniel Padilla"
+          profile={danielProfile} ranks="common" />
 
-      <Card name="Fran"
-         ranks="common" />
+        <Card name="Fran"
+          ranks="common" />
 
-      <Card name="Dion" 
+        <Card name="Dion"
         />
 
-      <Card name="Zach"
+        <Card name="Zach"
         />
 
-      <Card 
+        <Card
         />
+      </div>
     </>
   )
 }
