@@ -24,7 +24,7 @@ import paulSound from './assets/sound/paul.mp3'
 import danielProfile from './assets/daniel.png'
 
 // xyd
-import xydProfile from './assets/xyd.png'
+import xydProfile from './assets/xyd.jpg'
 
 function App() {
   return (
