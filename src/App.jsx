@@ -11,6 +11,7 @@ import seanProfile from './assets/sean.jpg'
 
 // mike
 import mikeSound from './assets/sound/mike.mp3'
+import mikeProfile from './assets/mike.jpg'
 
 // yoh
 import yohProfile from './assets/yoh.jpg'
@@ -25,6 +26,9 @@ import danielProfile from './assets/daniel.png'
 
 // xyd
 import xydProfile from './assets/xyd.jpg'
+
+// dion
+import dionProfile from './assets/dion.png'
 
 function App() {
   return (
@@ -42,7 +46,7 @@ function App() {
           profile={seanProfile} ranks="rare" />
 
         <Card name="Mike" description='Admin'
-          ranks="rare" sounds={mikeSound} />
+          profile={mikeProfile} ranks="rare" sounds={mikeSound} />
 
         <Card name="Yoh" description='Admin'
           profile={yohProfile} ranks="rare" sounds={yohSound} />
@@ -60,7 +64,7 @@ function App() {
           ranks="common" />
 
         <Card name="Dion"
-        />
+          profile={dionProfile}/>
 
         <Card name="Zach"
         />
